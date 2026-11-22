@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV ca nhan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap">
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #ffffffc1;
+  color: #000000;
+  font-family: "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  padding-block: 2rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+h1, h2, h3, p, ul { margin: 0; }
+.menu {
+            max-width: 52rem;
+            margin: 0 auto 1rem;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem 1.5rem;
+        }
+        .menu a {
+            color: #1b2430;
+            text-decoration: none;
+            font-weight: 500;
+            padding: .3rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        .menu a:hover { border-bottom-color: #2f5fd0; }
+        .menu a[aria-current="page"] { color: #2f5fd0; border-bottom-color: #2f5fd0; }
+
+.cv {
+  max-width: 52rem;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 1.5rem;
+  padding: 1.75rem;
+  background: #65e0f5b8;
+  color: #000000;
+}
+.photo {
+  width: 6.5rem;
+  height: 6.5rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+.info { flex: 1 1 16rem; min-width: 0; display: grid; gap: .25rem; }
+.info h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); font-weight: 800; line-height: 1.15; }
+.info .role { font-size: 1.1rem; opacity: .9; }
+.info .contact { margin-top: .4rem; font-size: .9rem; opacity: .9; display: flex; flex-wrap: wrap; gap: .1rem 1.25rem; }
+.body { padding: 1.75rem; display: grid; gap: 1.75rem; }
+h2 {
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #2f5fd0;
+  padding-bottom: .4rem;
+  margin-bottom: .75rem;
+  border-bottom: 1px solid #dde1e7;
+}
+.cols { display: flex; flex-wrap: wrap; gap: 1.75rem 2.5rem; }
+.col { flex: 1 1 16rem; min-width: 0; }
+
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; list-style: none; }
+.chips li { background: #eaf0fd; color: #2f5fd0; font-weight: 500; font-size: .9rem; padding: .2rem .75rem; border-radius: 999px; }
+
+.job { margin-bottom: 1rem; }
+.job:last-child { margin-bottom: 0; }
+.job h3 { font-size: 1.05rem; font-weight: 700; }
+.job .meta { color: #5b6676; font-size: .9rem; }
+.job p { margin-top: .2rem; font-size: .95rem; }
+</style>
+</head>
+<body>
+<header class="menu">
+    <nav>
+        <ul>
+          <li><a href="profile.html" aria-current="page">Home</a></li>
+            <li><a href="fish.html">Dự án đại dương</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="cv" lang="vi">
+  <div class="top">
+    <div class="photo">Ảnh</div>
+    <div class="info">
+      <h1>Phan Hoàng Bảo An</h1>
+      <p class="role">Sinh viên năm nhất</p>
+      <p class="contact"><span>ancc799@gmail.com</span><span>0376721300</span><span>TP. Hồ Chí Minh</span></p>
+    </div>
+  </div>
+
+  <div class="body">
+    <section>
+      <h2>Giới thiệu</h2>
+      <p>Là sinh viên năm nhất ngành Công nghệ thông tin.</p>
+    </section>
+    <div class="cols">
+      <section class="col">
+        <h2>Kỹ năng</h2>
+        <ul class="chips">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <section class="col">
+        <h2>Kinh nghiệm</h2>
+          <div class="job">
+          <h3>Project</h3>
+          <p class="meta">Dự án 2026</p>
+          <p>Trang giới thiệu sản phẩm làm bằng HTML, CSS và JavaScript.</p>
+		  <p>Xây dựng và bảo trì giao diện cho website bán hàng.</p>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <h2>Học vấn</h2>
+      <h3>Trường Đại học Sư phạm Thành phố Hồ Chí Minh</h3>
+    </section>
+  </div>
+</div>
+</body>
+</html>
